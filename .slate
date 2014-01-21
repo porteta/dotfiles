@@ -78,6 +78,8 @@ alias 1-bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2						${
 alias 1-bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2						${laptop}
 alias 1-bottomrightquarter corner bottom-right resize:screenSizeX/4;screenSizeY/2				${laptop}
 alias 1-threequarter move screenOriginX;screenOriginY screenSizeX/1.14;screenSizeY				${laptop}
+alias 1-right-threequarter corner bottom-right resize:screenSizeX/1.14;screenSizeY/1.14			${laptop}
+
 
 alias 2-full move screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias 2-lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY						${display}
@@ -87,7 +89,7 @@ alias 2-topright corner top-right resize:screenSizeX/2;screenSizeY/2							${dis
 alias 2-bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2						${display}
 alias 2-bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2						${display}
 alias 2-bottomrightquarter corner bottom-right resize:screenSizeX/4;screenSizeY/2				${display}
-alias 2-threequarter move screenOriginX;screenOriginY screenSizeX/1.14;screenSizeY				${display}
+alias 2-threequarter move screenOriginX;screenOriginY screenSizeX/1.14;screenSizeY/1.14			${display}
 
 # Resize Bindings
 bind right:ctrl;alt;cmd       resize +10% +0
@@ -157,11 +159,12 @@ bind 1:ctrl;alt;cmd layout laptop
 # display layout
 layout display 'Terminal':REPEAT ${1-topright} 
 layout display 'Sublime Text 2':REPEAT ${1-threequarter} 
-layout display 'Adium' ${1-bottomrightquarter}
+layout display 'Tower' ${1-right-threequarter}
 layout display 'Google Chrome':REPEAT ${2-full}
 layout display 'iTunes' ${2-lefthalf}
 layout display 'Scout' ${2-lefthalf}
 layout display 'Spotify' ${2-threequarter}
+layout display 'Adium' ${2-bottomrightquarter}
 layout display 'Finder':REPEAT ${2-bottomleft}
 
 bind 2:ctrl;alt;cmd layout display
