@@ -49,7 +49,7 @@ bind esc:cmd hint
 #End Default config
 
 #################
-#Jasons Config
+#Tyler's Config
 
 # Monitor Aliases
 alias laptop     0
@@ -159,12 +159,12 @@ bind 1:ctrl;alt;cmd layout laptop
 # display layout
 layout display 'Terminal':REPEAT ${1-topright} 
 layout display 'Sublime Text 2':REPEAT ${1-threequarter} 
-layout display 'Tower' ${1-right-threequarter}
+layout display 'Adium' ${1-right-threequarter}
 layout display 'Google Chrome':REPEAT ${2-full}
 layout display 'iTunes' ${2-lefthalf}
 layout display 'Scout' ${2-lefthalf}
 layout display 'Spotify' ${2-threequarter}
-layout display 'Adium' ${2-bottomrightquarter}
+layout display 'Tower' ${2-threequarter}
 layout display 'Finder':REPEAT ${2-bottomleft}
 
 bind 2:ctrl;alt;cmd layout display
