@@ -159,7 +159,7 @@ bind 1:ctrl;alt;cmd layout laptop
 # display layout
 layout display 'Terminal':REPEAT ${1-topright} 
 layout display 'Sublime Text 2':REPEAT ${1-threequarter} 
-layout display 'Adium' ${1-right-threequarter}
+layout display 'Adium' ${1-bottomrightquarter}
 layout display 'Google Chrome':REPEAT ${2-full}
 layout display 'iTunes' ${2-lefthalf}
 layout display 'Scout' ${2-lefthalf}
