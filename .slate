@@ -1,5 +1,3 @@
-# This is the default .slate file.
-# If no ~/.slate file exists this is the file that will be used.
 
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
@@ -51,9 +49,9 @@ bind esc:cmd hint
 #################
 #Tyler's Config
 
-# Monitor Aliases
-alias laptop     0
-alias display    1
+# single Aliases
+alias single     0
+alias dual    1
 
 # Abstract positions
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY							
@@ -69,29 +67,31 @@ alias threequarter move screenOriginX;screenOriginY screenSizeX/1.14;screenSizeY
 
 
 #concrete positions
-alias 1-full move screenOriginX;screenOriginY screenSizeX;screenSizeY							${laptop}
-alias 1-lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY						${laptop}
-alias 1-righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY		${laptop}
-alias 1-topleft corner top-left resize:screenSizeX/2;screenSizeY/2								${laptop}
-alias 1-topright corner top-right resize:screenSizeX/2;screenSizeY/2							${laptop}
-alias 1-bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2						${laptop}
-alias 1-bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2						${laptop}
-alias 1-bottomrightquarter corner bottom-right resize:screenSizeX/4;screenSizeY/2				${laptop}
-alias 1-threequarter move screenOriginX;screenOriginY screenSizeX/1.14;screenSizeY				${laptop}
-alias 1-right-threequarter corner bottom-right resize:screenSizeX/1.14;screenSizeY/1.14			${laptop}
+alias 1-full move screenOriginX;screenOriginY screenSizeX;screenSizeY							${single}
+alias 1-lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY						${single}
+alias 1-righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY		${single}
+alias 1-topleft corner top-left resize:screenSizeX/2;screenSizeY/2								${single}
+alias 1-topright corner top-right resize:screenSizeX/2;screenSizeY/2							${single}
+alias 1-bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2						${single}
+alias 1-bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2						${single}
+alias 1-bottomrightquarter corner bottom-right resize:screenSizeX/4;screenSizeY/2				${single}
+alias 1-threequarter move screenOriginX;screenOriginY screenSizeX/1.14;screenSizeY				${single}
+alias 1-right-threequarter corner bottom-right resize:screenSizeX/1.14;screenSizeY/1.14			${single}
+alias 1-bottomrightthreequarter corner bottom-right screenSizeX/1.05;screenSizeY/1.05			${single}
 
 
 alias 2-full move screenOriginX;screenOriginY screenSizeX;screenSizeY
-alias 2-lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY						${display}
-alias 2-righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY		${display}
-alias 2-topleft corner top-left resize:screenSizeX/2;screenSizeY/2								${display}
-alias 2-topright corner top-right resize:screenSizeX/2;screenSizeY/2							${display}
-alias 2-bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2						${display}
-alias 2-bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2						${display}
-alias 2-bottomrightquarter corner bottom-right resize:screenSizeX/4;screenSizeY/2				${display}
-alias 2-threequarter move screenOriginX;screenOriginY screenSizeX/1.14;screenSizeY/1.14			${display}
-alias 2-lockleft move screenOriginX/1.05;screenOriginY screenSizeX/1.05;screenSizeY				${display}
-alias 2-lockright corner top-right screenSizeX/1.05;screenSizeY									${display}
+alias 2-lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY						${dual}
+alias 2-righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY		${dual}
+alias 2-topleft corner top-left resize:screenSizeX/2;screenSizeY/2								${dual}
+alias 2-topright corner top-right resize:screenSizeX/2;screenSizeY/2							${dual}
+alias 2-bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2						${dual}
+alias 2-bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2						${dual}
+alias 2-bottomrightquarter corner bottom-right resize:screenSizeX/4;screenSizeY/2				${dual}
+alias 2-threequarter move screenOriginX;screenOriginY screenSizeX/1.14;screenSizeY/1.14			${dual}
+alias 2-lockleft move screenOriginX;screenOriginY screenSizeX/1.05;screenSizeY				${dual}
+alias 2-lockright corner top-right screenSizeX/1.05;screenSizeY									${dual}
+alias 2-toprightthreequarter corner top-right screenSizeX/1.05;screenSizeY/1.05					${dual}
 
 # Resize Bindings
 bind right:ctrl;alt;cmd       resize +10% +0
@@ -150,30 +150,31 @@ bind pad3:ctrl;alt;cmd ${threequarter}
                                                                                                                        
                                                                                                                        
 
-# laptop layout
-layout laptop 'Terminal':REPEAT ${topright} 
-layout laptop 'Sublime Text 2':REPEAT ${threequarter}
-layout laptop 'Google Chrome':REPEAT ${full}
-layout laptop 'iTunes' ${lefthalf}
-layout laptop 'Scout' ${lefthalf}
-layout laptop 'Spotify' ${threequarter}
-layout laptop 'Adium' ${bottomrightquarter}
-layout laptop 'Finder':REPEAT ${bottomleft}
+# single layout
+layout single 'Terminal':REPEAT ${topright} 
+layout single 'Sublime Text 2':REPEAT ${threequarter}
+layout single 'Google Chrome':REPEAT ${full}
+layout single 'iTunes' ${lefthalf}
+layout single 'Scout' ${lefthalf}
+layout single 'Spotify' ${threequarter}
+layout single 'Adium' ${bottomrightquarter}
+layout single 'Finder':REPEAT ${bottomleft}
 
-bind 1:ctrl;alt;cmd layout laptop
+bind 1:ctrl;alt;cmd layout single
 
-# display layout
-layout display 'Terminal':REPEAT ${1-topright} 
-layout display 'Sublime Text 2':REPEAT ${1-threequarter} 
-layout display 'Adium' ${1-bottomrightquarter}
-layout display 'Google Chrome':REPEAT ${2-lockleft}
-layout display 'iTunes' ${2-lefthalf}
-layout display 'Scout' ${2-lefthalf}
-layout display 'Spotify' ${2-threequarter}
-layout display 'Tower' ${2-lockright}
-layout display 'Finder':REPEAT ${2-bottomleft}
+# dual layout
+layout dual 'Terminal':REPEAT ${1-topright} 
+layout dual 'Sublime Text 2':REPEAT ${1-threequarter} 
+layout dual 'Adium' ${2-bottomrightquarter}
+layout dual 'Google Chrome':REPEAT ${2-lockleft}
+layout dual 'iTunes' ${2-lefthalf}
+layout dual 'Scout' ${2-lefthalf}
+layout dual 'Spotify' ${2-threequarter}
+layout dual 'Tower' ${1-bottomrightthreequarter}
+layout dual 'Finder':REPEAT ${2-bottomright}
+layout dual 'Evernote' ${2-toprightthreequarter}
 
-bind 2:ctrl;alt;cmd layout display
+bind 2:ctrl;alt;cmd layout dual
 
 #	                                                                   
 #	                                                           dddddddd
