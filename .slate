@@ -72,6 +72,7 @@ alias 1-lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY					
 alias 1-righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY		${single}
 alias 1-topleft corner top-left resize:screenSizeX/2;screenSizeY/2								${single}
 alias 1-topright corner top-right resize:screenSizeX/2;screenSizeY/2							${single}
+alias 1-toprighthalf corner top-right resize:screenSizeX/1.50;screenSizeY/2						${single}
 alias 1-bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2						${single}
 alias 1-bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2						${single}
 alias 1-bottomrightquarter corner bottom-right resize:screenSizeX/4;screenSizeY/2				${single}
@@ -89,7 +90,7 @@ alias 2-bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2						${
 alias 2-bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2						${dual}
 alias 2-bottomrightquarter corner bottom-right resize:screenSizeX/4;screenSizeY/2				${dual}
 alias 2-threequarter move screenOriginX;screenOriginY screenSizeX/1.14;screenSizeY/1.14			${dual}
-alias 2-lockleft move screenOriginX;screenOriginY screenSizeX/1.05;screenSizeY				${dual}
+alias 2-lockleft move screenOriginX;screenOriginY screenSizeX/1.05;screenSizeY					${dual}
 alias 2-lockright corner top-right screenSizeX/1.05;screenSizeY									${dual}
 alias 2-toprightthreequarter corner top-right screenSizeX/1.05;screenSizeY/1.05					${dual}
 
@@ -163,16 +164,16 @@ layout single 'Finder':REPEAT ${bottomleft}
 bind 1:ctrl;alt;cmd layout single
 
 # dual layout
-layout dual 'Terminal':REPEAT ${1-topright} 
+layout dual 'Terminal':REPEAT ${1-toprighthalf} 
 layout dual 'Sublime Text 2':REPEAT ${1-threequarter} 
 layout dual 'Adium' ${2-bottomrightquarter}
 layout dual 'Google Chrome':REPEAT ${2-lockleft}
 layout dual 'iTunes' ${2-lefthalf}
 layout dual 'Scout' ${2-lefthalf}
 layout dual 'Spotify' ${2-threequarter}
-layout dual 'Tower' ${1-bottomrightthreequarter}
+layout dual 'Evernote' ${1-bottomrightthreequarter}
 layout dual 'Finder':REPEAT ${2-bottomright}
-layout dual 'Evernote' ${2-toprightthreequarter}
+layout dual 'Tower' ${2-toprightthreequarter}
 
 bind 2:ctrl;alt;cmd layout dual
 
