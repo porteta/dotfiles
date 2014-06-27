@@ -171,6 +171,7 @@ layout dual 'Google Chrome':REPEAT ${2-lockleft}
 layout dual 'iTunes' ${2-lefthalf}
 layout dual 'Scout' ${2-lefthalf}
 layout dual 'Spotify' ${2-threequarter}
+layout dual 'Reeder' ${2-threequarter}
 layout dual 'Evernote' ${1-bottomrightthreequarter}
 layout dual 'Finder':REPEAT ${2-bottomright}
 layout dual 'Tower' ${2-toprightthreequarter}
