@@ -41,4 +41,4 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-source ~/.bashrc
+[[ -s ~/.bashrc ]] && source ~/.bashrc
