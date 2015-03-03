@@ -1,19 +1,8 @@
-# @gf3’s Sexy Bash Prompt, inspired by “Extravagant Zsh Prompt”
-# Shamelessly copied from https://github.com/gf3/dotfiles
-# Screenshot: http://i.imgur.com/s0Blh.png
-
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
 	export TERM=gnome-256color
 elif infocmp xterm-256color >/dev/null 2>&1; then
 	export TERM=xterm-256color
 fi
-
-# BLACK="\033[1;30m"
-# MAGENTA="\033[1;31m"
-# ORANGE="\033[1;33m"
-# GREEN="\033[1;32m"
-# PURPLE="\033[1;35m"
-# WHITE="\033[1;37m"
 
 BLACK="\033[1;30m"
 RED="\033[1;31m"
