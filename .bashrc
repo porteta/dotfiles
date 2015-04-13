@@ -2,8 +2,6 @@
 
 alias ll='ls -l'
 
-alias fuck='sudo $(history -p \!\!)'
-
 # Global npm without sudo
 NPM_PACKAGES="${HOME}/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"

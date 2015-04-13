@@ -46,3 +46,6 @@ eval "$(rbenv init -)"
 if [ -f ~/.gitcompletion ]; then
   source ~/.gitcompletion
 fi
+
+alias subl="open -a /Applications/Sublime\ Text.app"
+alias fuck='sudo $(history -p \!\!)'
