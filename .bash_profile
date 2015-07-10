@@ -50,4 +50,4 @@ fi
 alias subl="open -a /Applications/Sublime\ Text.app"
 alias fuck='sudo $(history -p \!\!)'
 alias tower='open /Applications/Tower.app'
-alias array='atom ~/Dev/enrollment-ui ~/Dev/arrayhealth-ui ~/Dev/shared-ui'
+alias array='atom ~/Dev/enrollment-ui ~/Dev/arrayhealth-ui ~/Dev/shared-ui ~/Dev/comps'
