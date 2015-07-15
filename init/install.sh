@@ -29,3 +29,4 @@ apm install angularjs-styleguide-snippets
 apm install editorconfig
 apm install linter
 apm install linter jshint
+apm install atom-bootstrap3
