@@ -28,5 +28,8 @@ apm install atom-beautify
 apm install angularjs-styleguide-snippets
 apm install editorconfig
 apm install linter
-apm install linter jshint
+apm install linter-jshint
+apm install linter-jscs
+apm install jscs-fixer
 apm install atom-bootstrap3
+apm install git-blame
