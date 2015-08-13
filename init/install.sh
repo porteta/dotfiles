@@ -15,7 +15,6 @@ brew cask install gitter
 brew cask install iterm2
 brew cask install jadengeller-helium
 brew cask install jumpcut
-brew cask install sublime-text3
 brew cask install slack
 brew cask install sookasa
 brew cask install spectacle
