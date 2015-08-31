@@ -48,7 +48,8 @@ if [ -f ~/.gitcompletion ]; then
 fi
 
 alias subl="open -a /Applications/Sublime\ Text.app"
-alias fuck='sudo $(history -p \!\!)'
 alias tower='open /Applications/Tower.app'
 
-$ ulimit -n 2560
+eval "$(thefuck --alias)"
+
+ulimit -n 2560
