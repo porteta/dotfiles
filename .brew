@@ -49,9 +49,7 @@ brew install thefuck
 brew tap homebrew/versions
 
 # Install native apps
-brew tap phinze/homebrew-cask
-brew install brew-cask
-
+brew install caskroom/cask/brew-cask
 
 brew tap caskroom/versions
 brew cask install atom
