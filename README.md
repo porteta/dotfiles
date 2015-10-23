@@ -8,3 +8,4 @@
 4. `source .osx`
 5. `source .brew`
 6. `source .apm`
+7. `source .npm_install`
