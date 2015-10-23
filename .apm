@@ -10,3 +10,5 @@ apm install git-blame
 apm install minimap
 apm install minimap-git-diff
 apm install atom-cli-diff
+apm install script
+apm install linter-eslint

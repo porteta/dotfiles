@@ -6,5 +6,5 @@
 2. `cd dotfiles`
 3. `source bootstrap.sh`
 4. `source .osx`
-5. `source init/install.sh`
-6. `source init/install_home.sh`
+5. `source .brew`
+6. `source .apm`
