@@ -6,3 +6,4 @@ npm install -g eslint
 npm install -g yo
 npm install -g generator-gulp-angular
 npm install -g ember-cli
+npm install -g bower
