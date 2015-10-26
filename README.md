@@ -7,5 +7,6 @@
 3. `source bootstrap.sh`
 4. `source .osx`
 5. `source .brew`
-6. `source .apm`
-7. `source .npm_install`
+6. `source .homebrew`
+7. `source .apm`
+8. `source .npm_install`
