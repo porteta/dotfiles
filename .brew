@@ -74,6 +74,7 @@ brew cask install tower
 brew cask install viber
 brew cask install virtualbox
 brew cask install ynab
+brew cask install macclean
 
 # Remove outdated versions from the cellar
 brew cleanup
