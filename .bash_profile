@@ -53,4 +53,3 @@ alias tower='open /Applications/Tower.app'
 eval "$(thefuck --alias)"
 
 ulimit -n 2560
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home

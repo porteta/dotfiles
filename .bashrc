@@ -2,7 +2,7 @@
 
 alias ll='ls -l'
 
-# Maven Opts
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 export MAVEN_OPTS="-Xmx4g -XX:MaxPermSize=1g"
 
 # Global npm without sudo
