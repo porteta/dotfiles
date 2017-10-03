@@ -81,9 +81,9 @@ brew install ack
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
+brew install jenv
 brew install lua
 brew install lynx
-# brew install node
 brew install p7zip
 brew install pigz
 brew install pv
