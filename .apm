@@ -1,14 +1,13 @@
 apm install atom-beautify
-apm install angularjs-styleguide-snippets
 apm install editorconfig
+apm install language-pug
 apm install linter
+apm install linter-eslint
 apm install linter-jshint
 apm install linter-jscs
-apm install jscs-fixer
-apm install atom-bootstrap3
+apm install linter-pug-lint
 apm install git-blame
 apm install minimap
 apm install minimap-git-diff
 apm install atom-cli-diff
 apm install script
-apm install linter-eslint
