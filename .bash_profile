@@ -64,6 +64,10 @@ export MAVEN_OPTS="-Xmx4g -XX:MaxPermSize=1g"
 NPM_PACKAGES="${HOME}/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
+# Go variables
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # jenv http://www.jenv.be/s
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
